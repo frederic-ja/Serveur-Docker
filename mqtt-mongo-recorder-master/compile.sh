@@ -9,7 +9,7 @@ done
 docker build -t js_app .
 echo "Build Complete"
 
-docker run -it --restart always --name mqtt_recorder js_app
+docker run -it --restart unless-stopped --name mqtt_recorder js_app
 echo "Docker Running"
 
 
