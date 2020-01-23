@@ -4,7 +4,7 @@ config.debug = process.env.DEBUG || false;
 
 config.mqtt  = {};
 config.mqtt.namespace = process.env.MQTT_NAMESPACE || '/Pomo/#';
-config.mqtt.hostname  = process.env.MQTT_HOSTNAME  || '212.195.57.153';
+config.mqtt.hostname  = process.env.MQTT_HOSTNAME  || ${{ secrets.IP_Server }}
 config.mqtt.port      = process.env.MQTT_PORT      || 1883;
 
 config.mongodb = {};
